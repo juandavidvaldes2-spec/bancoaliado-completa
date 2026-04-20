@@ -32,10 +32,10 @@ body {
 
 .slide {
   width: 1280px;
-  height: 720px;
+  min-height: 720px; height: auto;
   margin: 20px auto;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 8px 40px rgba(0,0,0,0.15);
   background: var(--white);
   page-break-after: always;
@@ -63,13 +63,13 @@ body {
   height: 6px;
   background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
 }
-.cover .label { font-size: 13px; letter-spacing: 4px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
+.cover .label { font-size: 16px; letter-spacing: 4px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
 .cover h1 { font-family: 'Playfair Display', serif; font-size: 56px; color: white; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
 .cover .subtitle { font-size: 18px; color: rgba(255,255,255,0.6); font-weight: 300; margin-bottom: 48px; }
 .cover .gold-line { width: 80px; height: 3px; background: var(--gold); margin-bottom: 32px; }
-.cover .client-label { font-size: 11px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 8px; }
+.cover .client-label { font-size: 14px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 8px; }
 .cover .client { font-family: 'Playfair Display', serif; font-size: 42px; color: white; font-weight: 700; margin-bottom: 48px; }
-.cover .footer-info { font-size: 13px; color: rgba(255,255,255,0.4); }
+.cover .footer-info { font-size: 16px; color: rgba(255,255,255,0.4); }
 
 /* ===== DIVIDER SLIDE ===== */
 .slide.divider {
@@ -87,7 +87,7 @@ body {
   background: var(--gold);
 }
 .divider .chapter-num { font-family: 'Playfair Display', serif; font-size: 72px; color: var(--gold); font-weight: 700; opacity: 0.3; margin-bottom: -20px; }
-.divider .chapter-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; font-weight: 600; margin-bottom: 16px; }
+.divider .chapter-label { font-size: 15px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; font-weight: 600; margin-bottom: 16px; }
 .divider .gold-line { width: 60px; height: 3px; background: var(--gold); margin-bottom: 24px; }
 .divider h2 { font-family: 'Playfair Display', serif; font-size: 42px; color: white; font-weight: 700; line-height: 1.2; max-width: 900px; }
 
@@ -101,12 +101,12 @@ body {
 }
 .slide.content .slide-body {
   padding: 32px 80px 40px;
-  height: 714px;
+  min-height: 714px; height: auto;
   display: flex;
   flex-direction: column;
 }
 .slide.content .section-label {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 3px;
   color: var(--gold);
   text-transform: uppercase;
@@ -129,7 +129,7 @@ body {
   margin-bottom: 20px;
 }
 .slide.content .body-text {
-  font-size: 14px;
+  font-size: 17px;
   color: var(--text);
   line-height: 1.6;
   margin-bottom: 16px;
@@ -137,7 +137,7 @@ body {
 }
 .slide.content .main-content {
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
 }
 .slide.content .slide-footer {
   display: flex;
@@ -145,7 +145,7 @@ body {
   align-items: center;
   padding-top: 8px;
   border-top: 1px solid #e8e8e8;
-  font-size: 10px;
+  font-size: 13px;
   color: var(--light);
 }
 
@@ -154,7 +154,7 @@ body {
 .bullet-list li {
   padding: 10px 0 10px 24px;
   position: relative;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.5;
   color: var(--text);
   border-bottom: 1px solid #f0f0f0;
@@ -195,7 +195,7 @@ body {
   left: 12px;
 }
 .quote-box p {
-  font-size: 14px;
+  font-size: 17px;
   font-style: italic;
   color: var(--mid);
   line-height: 1.5;
@@ -208,7 +208,7 @@ body {
   color: white;
   padding: 12px 20px;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 12px;
   line-height: 1.5;
@@ -239,7 +239,7 @@ body {
 .card.red-border { border-top-color: var(--accent); }
 
 .card .card-title {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--navy);
   text-transform: uppercase;
@@ -247,7 +247,7 @@ body {
   margin-bottom: 8px;
 }
 .card .card-body {
-  font-size: 12px;
+  font-size: 15px;
   color: var(--text);
   line-height: 1.5;
 }
@@ -280,12 +280,12 @@ body {
   line-height: 1;
 }
 .stat-card .stat-unit {
-  font-size: 14px;
+  font-size: 17px;
   color: var(--gold);
   font-weight: 600;
 }
 .stat-card .stat-label {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--mid);
   margin-top: 6px;
   line-height: 1.3;
@@ -295,7 +295,7 @@ body {
 .data-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 15px;
   margin: 8px 0;
 }
 .data-table th {
@@ -304,7 +304,7 @@ body {
   padding: 10px 14px;
   text-align: left;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -326,11 +326,11 @@ body {
 }
 .compare-col {
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
 }
 .compare-col .col-header {
   padding: 12px 16px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -339,7 +339,7 @@ body {
 .compare-col .col-body {
   padding: 16px;
   background: var(--bg);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.6;
   color: var(--text);
 }
@@ -361,7 +361,7 @@ body {
   border-radius: 0 6px 6px 0;
 }
 .voice .voice-role {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--navy);
   text-transform: uppercase;
@@ -369,7 +369,7 @@ body {
   margin-bottom: 4px;
 }
 .voice .voice-quote {
-  font-size: 12px;
+  font-size: 15px;
   font-style: italic;
   color: var(--mid);
   line-height: 1.4;
@@ -399,13 +399,13 @@ body {
 .journey-step .step-indicator.warn { background: #ffc107; }
 .journey-step .step-indicator.bad { background: var(--accent); }
 .journey-step .step-title {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 6px;
 }
 .journey-step .step-desc {
-  font-size: 10px;
+  font-size: 13px;
   color: var(--mid);
   line-height: 1.4;
 }
@@ -436,7 +436,7 @@ body {
   font-weight: 400;
 }
 .big-quote .bq-source {
-  font-size: 12px;
+  font-size: 15px;
   color: var(--mid);
   margin-top: 20px;
   font-style: italic;
@@ -454,7 +454,7 @@ body {
 .closing-slide .gold-line-c { width: 80px; height: 3px; background: var(--gold); margin-bottom: 32px; }
 .closing-slide h2 { font-family: 'Playfair Display', serif; font-size: 72px; color: white; font-weight: 700; margin-bottom: 24px; }
 .closing-slide .cs-subtitle { font-size: 18px; color: rgba(255,255,255,0.5); margin-bottom: 8px; }
-.closing-slide .cs-brand { font-size: 14px; color: var(--gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-top: 40px; }
+.closing-slide .cs-brand { font-size: 17px; color: var(--gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-top: 40px; }
 
 /* Two column layout */
 .two-col {
@@ -478,7 +478,7 @@ body {
   text-align: center;
 }
 .perception-item .pi-label {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -486,7 +486,7 @@ body {
   margin-bottom: 4px;
 }
 .perception-item .pi-desc {
-  font-size: 10px;
+  font-size: 13px;
   color: rgba(255,255,255,0.85);
   line-height: 1.3;
 }
@@ -670,7 +670,7 @@ body {
 <p class="body-text">El estudio revela un desafío generacional que va más allá de la tecnología. Es un cambio en cómo las nuevas generaciones construyen confianza, toman decisiones y se relacionan con las instituciones financieras:</p>
 <ul class="bullet-list">
 <li><strong>La confianza ya no se hereda, se construye por experiencia directa.</strong> Los hijos de clientes de banca privada no se quedan "porque papá era cliente". Si el banco no les habla en su idioma y en sus canales, migran a Banco General por Yappy o a otros por comodidad. La lealtad generacional ya no es automática.</li>
-<li><strong>Los jóvenes no buscan banco. buscan soluciones.</strong> No les interesa "ser clientes de un banco". Les interesa resolver: pagar, transferir, ahorrar, invertir. El banco que lo resuelva más fácil gana. Banco Aliado tiene el servicio pero no tiene el canal.</li>
+<li><strong>Los jóvenes no buscan banco. buscan soluciones.</strong> No les interesa "ser clientes de un banco". Les interesa resolver: pagar, transferir, ahorrar, invertir. El banco que lo resuelva más fácil gana. Banco Aliado tiene el servicio, pero antes del canal le falta definir su voz: una claridad de propósito, una personalidad de marca y un sistema de valores que conecte con estas audiencias. Sin esa base, el canal es solo un medio vacío.</li>
 <li><strong>La decisión bancaria joven es social, no individual.</strong> Los jóvenes eligen por lo que usan sus amigos, por lo que ven en TikTok, por recomendación directa. Si nadie en su círculo habla de Banco Aliado, el banco no existe para ellos.</li>
 <li><strong>El tono visual actual es barrera para jóvenes, código de confianza para adultos.</strong> Los jóvenes ven la web y dicen "serio, ejecutivo, algo anticuado". Los adultos dicen "elegante, profesional". Cualquier evolución visual debe equilibrar ambos sin traicionar a ninguno.</li>
 <li><strong>Educación financiera como puerta de entrada.</strong> Varios jóvenes dijeron explícitamente: "a nadie nos enseñan finanzas". Si Banco Aliado produce contenido educativo en redes, genera autoridad, confianza y consideración sin vender directamente. Es la puerta más orgánica al segmento joven.</li>
